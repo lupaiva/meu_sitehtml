@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos Sonhos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLeSaAA55NDzOxhy9GkcIdslK1eHN7N6jIeHz" crossorigin="anonymous">
+    <link rel ="stylesheet" href = "style.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Taxa</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
+    </header>
+    <section>
+    <h2>Conheça nossos pacotes</h2>
+    <p> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean id consectetur risus, eget dictum lorem. Nunc tempus egestas condimentum. 
+        Pellentesque nisi urna, ornare vel lacus nec, imperdiet sodales lacus. Integer leo mauris, blandit et molestie vitae, tempor at orci. 
+        Donec mollis tortor nibh, eu congue nulla semper sit amet.
+        Cras egestas suscipit est, id facilisis justo efficitur et. 
+        Proin ultrices nibh interdum, malesuada metus ut, fringilla ligula. 
+        Mauris ornare diam eget interdum bibendum. Nam fermentum mi sed urna malesuada, nec ullamcorper mauris condimentum. Proin accumsan convallis ante quis convallis. Nulla nec sollicitudin ipsum, eu laoreet tortor. Pellentesque tristique consectetur leo, id mattis tellus porta vitae. In congue sodales nibh et condimentum. Aliquam pellentesque condimentum libero, eget pulvinar justo tincidunt in. 
+        Morbi malesuada felis in arcu facilisis, vestibulum porta diam dignissim.
+       <br><br>
+        <a href="https://www.lipsum.com/feed/html">Link</a>
+        </p>
+        <hr>
+        <figure>
+            <img src="img/nossos-pacotes/gramado.jpg" alt="Imagem de Gramado" width="500px">
+            <figcaption>Gramado</figcaption>
+
+            <img src="img/nossos-pacotes/porto-seguro.jpg" alt="Imagem de Porto Seguro" width="500px">
+            <figcaption>Porto Seguro</figcaption>
+            
+
+            <img src="img/nossos-pacotes/rio-de-janeiro.jpg" alt="Imagem da vista de cima do Rio de Janeiro" width="500px">
+            <figcaption>Rio de Janeiro</figcaption>
+</figure>
+    </section>
+    <video controls width="500px">
+        <source src="video/rabbit.mp4" type="video/mp4">
+        <source src="video/rabbit.webn" type="video/webn">
+        Seu navegador não suporta o formato do vídeo. <a href="video/rabbit.mp4">Clique aqui para baixar</a>
+    </video>
+    <br>
+    <br/>
+    <section>
+        <h2>Orçamento</h2>
+        <form method = "GET" action = "">
+            
+        <fieldset>
+
+            <legend>Dados da Viagem</legend>
+
+            <label>Nome:</label>
+            <br/>
+            <input type = "text" name = "nome">
+            <br/>
+            <br/>
+
+            <label>Email:</label>
+            <br/>
+            <input type = "email" required name = "email">
+            <br/>
+            <br/>
+
+            <label>Data de Ida:</label>
+            <br/>
+            <input type = "date" name = "dataIda">
+            <br/>
+            <br/>
+
+            <label>Data de Volta:</label>
+            <br/>
+            <input type = "date" name = "dataVolta">
+            <br/>
+            <br/>
+
+            <label>Quantidade de Pessoas:</label>
+            <br/>
+            <input type = "number" name = "qtdPessoas">
+            <br/>
+            <br/>
+            </fieldset>
+            <br/>
+
+        <fieldset>
+            <legend>Quais serviços deseja contratar?</legend>
+            <br/>
+
+            <label>
+            <input type = "checkbox" name = "passagens" value = "Passagens"> Compra de Passagens
+            </label><br/>
+
+            <label>
+            <input type = "checkbox" name = "hospedagem" value = "Hospedagem"> Reserva de Hospedagem
+            </label><br/>
+
+            <label>
+            <input type = "checkbox" name = "veiculos" value = "Veículo"> Aluguel de Veículos
+            </label>
+            <br/>
+            <br/>
+        </fieldset>
+        <br/>
+
+        <fieldset>
+            <legend>Escolha a forma de pagamento</legend>
+            <br/>
+
+            <label>
+            <input type = "radio" name = "formaPagamento" value = "Cartão de Crédito"> Cartão de Crédito
+            </label><br/>
+
+            <label>
+            <input type = "radio" name = "formaPagamento" value = "Boleto"> Boleto
+            </label><br/>
+
+            <label>
+            <input type = "radio" name = "formaPagamento" value = "Pix"> Pix
+            </label>
+            <br/>
+            <br/>
+        </fieldset>
+        
+        <br/>
+        <fieldset>
+            <legend>Escolha o prazo para pagamento</legend>
+            <select name = "prazoPagamento">
+                <option value="aVista">À vista</option>
+                <option value="5x">5x sem juros</option>
+                <option value="10x">10x com juros</option>
+            </select>
+            <br/>
+        </fieldset>
+        <br/>
+
+            <label>Comentário:</label>
+            <br/>
+            <textarea rows="5" name = "comentario"></textarea> 
+            <br/>
+            <br/>
+
+            <button>Salvar</button>
+        </form>
+
+    </section>
+    <section>
+       
+        <h2>Taxas e Serviços</h2>
+        <p>Veja nossas taxas e serviços:</p>
+
+        <table border>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+            <tr>
+                <th>Serviço</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Reserva de Hotel </td>
+                <td> R$ 150,00 </td>
+            </tr>
+            
+            <tr>
+                <td> Compra de Passagens </td>
+                <td> R$ 100,00 </td>
+            </tr>
+            
+            <tr>
+                <td> Aluguel de Carros </td>
+                <td> R$ 50,00 </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Serviço</th>
+                <th>Valor</th>
+            </tr>
+        </tfoot>
+        </table>
+    </section>
+    <footer>
+        <p>Desenvolvido por Luisa</p>
+    </footer>
+</body>
+</html>
